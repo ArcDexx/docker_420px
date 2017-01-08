@@ -1,0 +1,6 @@
+{
+    "require": {
+        "imagine/imagine": "~0.5.0",
+        "sybio/gif-creator": "^1.0"
+    }
+}

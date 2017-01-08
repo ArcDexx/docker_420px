@@ -1,0 +1,27 @@
+web:
+  image: 420px/nginx
+  ports:
+    - "8080:80"
+  volumes:
+    - ./src:/var/www
+    - ./src/vhost.conf:/etc/nginx/sites-enabled/vhost.conf
+  links:
+    - php
+
+php:
+  image: nmcteam/php56
+  volumes:
+    - ./src/php-fpm.conf:/etc/php5/fpm/php-fpm.conf
+    - ./src:/var/www
+  links:
+    - db
+
+db:
+  image: sameersbn/mysql
+  volumes:
+   - /var/lib/mysql
+   - ./src/init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+  environment:
+   - DB_NAME=db-420px
+   - DB_USER=corentingwroot
+   - DB_PASS=Douffidu81
