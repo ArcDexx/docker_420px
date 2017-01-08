@@ -9,8 +9,7 @@
       {
         try
         {
-          #$dsn = 'mysql:host=corentingwroot.mysql.db; dbname=corentingwroot';
-	  $dsn = 'mysql:host=db; dbname=corentingwroot';
+	  $dsn = 'mysql:host=db; dbname=db-420px';
           self::$connection = new PDO($dsn, 'corentingwroot', 'Douffidu81');
         }
         catch (PDOException $e)
