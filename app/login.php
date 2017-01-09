@@ -115,10 +115,5 @@
     </div>
   </div>
 </div>
-<?php
-  phpinfo(INFO_MODULES);
-  phpinfo();
-
-?>
 </body>
 </html>
