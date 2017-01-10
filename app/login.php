@@ -1,5 +1,5 @@
 <?php
-  include_once('models/user.php');
+  include_once('models/User.php');
   include_once('controller/session.php');
   include_once('controller/dbhandler.php');
 
