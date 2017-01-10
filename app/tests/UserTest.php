@@ -1,5 +1,5 @@
 <?php
-require 'app/models/User.php';
+require '/home/ubuntu/docker_420px/app/models/User.php';
 
 class UserTests extends PHPUnit_Framework_TestCase
 {
