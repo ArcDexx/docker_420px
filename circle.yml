@@ -1,5 +1,5 @@
 deployment:
-  production:
+  staging:
       branch: master
-      commands:
-	- ./deploy.sh
+          heroku:
+	        appname: heroku420px
