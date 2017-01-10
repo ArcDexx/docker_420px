@@ -9,8 +9,8 @@
       {
         try
         {
-	        $dsn = 'mysql:host=172.17.0.2;port=3306;dbname=myapp';
-          self::$connection = new PDO($dsn, 'dev', '123456');
+	        $dsn = 'mysql:host='.getenv("DB_PORT_3306_TCP_ADDR").';port=3306;dbname=myapp';
+          self::$connection = new PDO($dsn, 'root', '123456');
         }
         catch (PDOException $e)
         {
