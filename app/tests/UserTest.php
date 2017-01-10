@@ -1,5 +1,5 @@
 <?php
-require 'models/User.php';
+require 'app/models/User.php';
 
 class UserTests extends PHPUnit_Framework_TestCase
 {
