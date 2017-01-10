@@ -89,7 +89,7 @@
   <?php
   }
   ?>
-  <h1>Bienvenue sur 420px (now Dockered, CircleCI'ed and Heroku'ed !)</h1><br/><br/>
+  <h1>Bienvenue sur 420px</h1><br/><br/>
   <div class="row">
       <div class="col-md-offset-3 col-md-6">
         <h2>Connexion</h2>
