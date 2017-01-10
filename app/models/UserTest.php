@@ -1,5 +1,25 @@
 <?php
-require 'User.php';
+class User
+{
+  public $login;
+  public $password;
+
+  function isLoginLengthOk($login)
+  {
+      if (strlen($login) > 10)
+         return false;
+      else
+         return true;
+  }
+
+  function isPasswordLengthOk($password)
+  {
+      if (strlen($password) < 4)
+         return false;
+      else
+         return true;
+  }
+}
 
 class UserTests extends PHPUnit_Framework_TestCase
 {
