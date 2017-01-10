@@ -1,6 +1,9 @@
 machine:
   services:
     - docker
+test:
+  override:
+    - phpunit app/tests
     
 deployment:
   staging:
