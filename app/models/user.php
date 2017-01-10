@@ -5,6 +5,22 @@
   {
     public $login;
     public $password;
+
+    function isLoginLengthOk($login)
+    {
+        if (strlen($login) > 10)
+           return false;
+        else
+           return true;
+    }
+
+    function isPasswordLengthOk($password)
+    {
+        if (strlen($password) < 4)
+           return false;
+        else
+           return true;
+    }
   }
 
   function isLoginFree($name)
