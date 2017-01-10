@@ -3,7 +3,7 @@ machine:
     - docker
 test:
   override:
-    - phpunit app/models
+    - phpunit app/models/UserTest.php
     
 deployment:
   staging:
